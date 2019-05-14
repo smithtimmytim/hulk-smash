@@ -1,0 +1,29 @@
+// -------------------------------
+// TABLES
+// -------------------------------
+
+table {
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  font-family: $font-code;
+  font-size: $ratio-1;
+  margin: 1.8rem auto;
+  width: 90%;
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--light-bg);
+  }
+}
+
+thead th {
+  color: var(--text);
+  font-weight: 600;
+  min-width: 90px;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 0.5rem 0.8rem;
+}

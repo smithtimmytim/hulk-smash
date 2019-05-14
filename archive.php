@@ -1,0 +1,40 @@
+<?php
+  get_header(); ?>
+
+<main class="main">
+  <div class="p-body">
+    <?php if ( have_posts() ) : ?>
+      <header class="page__header">
+        <h1 class="page-header__title" id="page-title">
+          <?php
+            single_cat_title();
+          ?>
+          <small>
+            <?php
+              $cat= get_the_category();
+              echo $cat[0]->count;
+            ?>
+          </small>
+        </h1>
+        
+        <?php if (get_the_archive_description()) : ?>
+          <?php 
+            the_archive_description('<div class="page-header__description">', '</div>');
+          ?>
+        <?php endif; ?>
+      </header>
+
+      <?php
+      // Start the Loop.
+      while ( have_posts() ) :
+        the_post();
+
+        get_template_part('template-parts/content/excerpt');
+
+      endwhile;
+    endif;
+    ?>
+  </div>
+</main>
+
+<?php get_footer(); ?>

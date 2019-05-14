@@ -1,0 +1,41 @@
+// // -------------------------------
+
+pre {
+  font-family: Operator Mono, monospace;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+  code {
+    background: none;
+    padding: 0;
+  }
+}
+
+code {
+  background: var(--code-bg);
+  border-radius: 3px;
+  color: #bf616a;
+  font-family: Operator Mono, monospace;
+  font-size: $ratio - 0.05;
+  line-height: 1.5;
+  padding: 1px 4px;
+  white-space: pre;
+  pre & {
+    color: inherit;
+  }
+  a & {
+    color: inherit;
+  }
+}
+
+.hljs {
+  border-radius: $global-radius;
+  margin-bottom: 1.8rem;
+  margin-top: 1.8rem;
+  padding: 1rem !important;
+}
+
+// pre.highlight {
+//   background: #2b303b;
+//   color: #eff1f5;
+// }
