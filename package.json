@@ -21,6 +21,7 @@
     "gulp-if": "^2.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "prismjs": "^1.16.0",
     "webpack-stream": "^5.2.1",
     "yargs": "^13.2.4"
   }
