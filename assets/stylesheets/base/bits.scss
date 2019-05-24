@@ -63,7 +63,8 @@
     fill: var(--light-text);
   }
 
-  .hljs {
+  code[class*='language-'],
+  pre[class*='language-'] {
     background: var(--light-bg);
   }
 
