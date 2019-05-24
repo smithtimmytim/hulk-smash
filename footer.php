@@ -52,7 +52,7 @@
 
   </div>
 
-  <?php get_search_form(); ?>  
+  <?php get_search_form(); ?>
 
   <div class="sub-footer">
     <small><em>Bright Pixels</em> is proudly built with <a href="https://statamic.com/">Statamic</a>, hosted on <a href="https://m.do.co/c/892de84d39e6">DigitalOcean</a>, and deployed&nbsp;with <a href="https://forge.laravel.com/">Laravel Forge</a>. Made with <?php get_template_part('template-parts/vectors/heart_icon'); ?> in Oceanside, CA.</small>
