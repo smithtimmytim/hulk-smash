@@ -68,6 +68,7 @@
   <h2 class="header-topics__title">Browse by Section</h2>
   <ul>
     <?php wp_list_categories( array(
+      'order'      => 'DESC',
       'orderby'    => 'count',
       'show_count' => true,
       'title_li'   => ''

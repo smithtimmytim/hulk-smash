@@ -13,6 +13,7 @@
     <h2>Browse by Section</h2>
     <ul>
       <?php wp_list_categories( array(
+        'order'      => 'DESC',
         'orderby'    => 'count',
         'title_li'   => ''
       )); ?>

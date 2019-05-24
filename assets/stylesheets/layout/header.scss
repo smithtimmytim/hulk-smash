@@ -159,23 +159,23 @@ body {
     padding-bottom: 1rem;
   }
 
-  a {
+  .cat-item {
+    color: var(--light-text);
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
-    color: var(--light-text);
-    padding: 0.6rem 0;
+    padding: 0.45rem 0;
     border-top: 3px solid var(--border);
-    line-height: 1;
     font-size: $ratio-1;
+    font-family: $font-code;
+  }
+
+  a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-family: $font-text;
     &:hover,
     &:focus {
       color: var(--primary);
-    }
-
-    span {
-      font-family: $font-code;
-      font-size: $ratio-1;
     }
   }
 }
