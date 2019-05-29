@@ -24,6 +24,10 @@
   <link rel="me" href="https://micro.blog/smith" />
   <link rel="me" href="https://twitter.com/brightpxblog" />
 
+  <!-- Site Icons -->
+  <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png" />
+  <link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
+
 
   <!-- RSS Feeds -->
   <link rel="alternate" type="application/rss+xml" title="Master Feed for Bright Pixels" href="https://feedpress.me/brightpixels" />
