@@ -55,7 +55,7 @@
   <?php get_search_form(); ?>
 
   <div class="sub-footer">
-    <small><em>Bright Pixels</em> is built with <a href="https://wordpress.org/">WordPress</a> and hosted on <a href="https://share.getf.ly/y51n9a">Flywheel</a>.<br>Made with <?php get_template_part('template-parts/vectors/heart_icon'); ?> in Oceanside, CA.</small>
+    <small><em>Bright Pixels</em> is built with <a href="https://wordpress.org/">WordPress</a> and hosted on <a href="https://share.getf.ly/y51n9a">Flywheel</a>. <em>The Bright Pixels Podcast</em> is proudly hosted with <a href="https://transistor.fm/?via=timothy">Transistor</a>.<br>Made with <?php get_template_part('template-parts/vectors/heart_icon'); ?> in Oceanside, CA.</small>
 
     <small>&copy; 2013&ndash;<script>document.write(new Date().getFullYear())</script> Timothy B. Smith.</small>
   </div>
