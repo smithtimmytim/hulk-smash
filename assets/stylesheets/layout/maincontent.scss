@@ -242,59 +242,75 @@
   transition: opacity 300ms ease-in-out;
 }
 
-.toc-wrapper {
+#ez-toc-container {
   border: 1px solid var(--border);
   border-radius: $global-radius;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  margin-left: 1.8rem;
+  margin-top: 1.8rem;
 
-  h2 {
-    align-items: center;
-    background-color: var(--light-bg);
-    cursor: pointer;
-    display: flex;
-    font-size: $ratio-1;
-    justify-content: space-between;
-    letter-spacing: 0.6px;
-    margin: 0;
-    padding: 0.6rem 1rem;
-    text-transform: uppercase;
-
-    svg {
-      fill: var(--light-text);
-      transition: transform 350ms ease;
-      width: 16px;
-    }
-
-    &.js-toc-is-open {
-      svg {
-        transform: rotate(180deg);
-      }
-    }
+  nav {
+    padding-bottom: 0.35rem;
+    padding-right: 0.75rem;
+    padding-top: 0.35rem;
   }
 
-  #markdown-toc {
-    display: none;
-    font-size: $ratio-1;
-    height: 0;
-    list-style: decimal-leading-zero;
-    overflow: hidden;
-    padding-left: 2rem;
-    transition: height 350ms ease;
-
-    &.js-toc-is-open {
-      display: block;
-      height: auto;
-    }
+  @media #{$medium-up} {
+    float: right;
+    min-width: 40%;
+    max-width: 50%;
   }
+
+  @media #{$large-up} {
+    margin-right: -4rem;
+  }
+}
+
+.ez-toc-title-container {
+  position: relative;
+}
+
+.ez-toc-title {
+  align-items: center;
+  background-color: var(--light-bg);
+  display: flex;
+  font-size: $ratio-2;
+  font-weight: 600;
+  justify-content: space-between;
+  letter-spacing: 0.6px;
+  margin: 0;
+  padding: 0.6rem 1rem;
+  text-transform: uppercase;
+}
+
+.ez-toc-title-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.ez-toc-btn {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.ez-toc-list {
+  font-size: $ratio-1;
+  list-style: decimal-leading-zero;
+  overflow: hidden;
+  padding-left: 2rem;
 
   li {
-    padding: 0.35rem 0;
+    padding: 0.25rem 0;
+    font-size: 0.75rem;
 
     a {
       border-bottom: 1px dotted transparent;
       display: inline-block;
-      font-size: $ratio-1;
+
       font-weight: 600;
       text-decoration: none;
 
@@ -305,7 +321,7 @@
       }
     }
 
-    ol {
+    ul {
       list-style-type: lower-roman;
       padding-left: 0.5rem;
     }
