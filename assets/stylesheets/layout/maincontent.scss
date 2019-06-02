@@ -393,8 +393,16 @@
 .post__player {
   margin-bottom: 1.8rem;
   margin-top: 1.8rem;
+
   audio {
     width: 100%;
+  }
+
+  small {
+    display: block;
+    font-size: $ratio-2;
+    margin-top: 0.2rem;
+    text-align: right;
   }
 }
 

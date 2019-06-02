@@ -41,6 +41,7 @@
         <audio id="main-audio" controls="controls" width="100%">
           <source src="<?php the_field('audio_url'); ?>" type="audio/mpeg">
         </audio>
+        <small>Proudly hosted by <a href="https://transistor.fm/?via=timothy">Transistor</a></small>
       </div>
     <?php endif; ?>
     <?php the_content(); ?>
@@ -54,6 +55,8 @@
       <?php endif; ?>
 
       <?php get_template_part('template-parts/newsletter_form'); ?>
+      
     </footer>
   <?php endif; ?>
+
 </article>
