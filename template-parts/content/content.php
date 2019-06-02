@@ -56,6 +56,10 @@
 
       <?php get_template_part('template-parts/newsletter_form'); ?>
       
+      <section class="post__comments">
+        <h2 class="comments__title">Comments</h2>
+        <?php comments_template(); ?>
+      </section>
     </footer>
   <?php endif; ?>
 
