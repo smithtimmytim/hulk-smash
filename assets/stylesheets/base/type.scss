@@ -38,9 +38,7 @@ h5 {
 p {
   font-size: $ratio;
   line-height: 1.7;
-  + p {
-    margin-top: $ratio;
-  }
+  margin-bottom: $ratio;
 }
 
 h1 {
