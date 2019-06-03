@@ -246,7 +246,6 @@
   border: 1px solid var(--border);
   border-radius: $global-radius;
   margin-bottom: 1.8rem;
-  margin-left: 1.8rem;
   margin-top: 1.8rem;
 
   nav {
@@ -257,8 +256,9 @@
 
   @media #{$medium-up} {
     float: right;
-    min-width: 40%;
+    margin-left: 1.8rem;
     max-width: 50%;
+    min-width: 40%;
   }
 
   @media #{$large-up} {
