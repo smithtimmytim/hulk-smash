@@ -22,3 +22,9 @@
     false
   );
 })(window, document);
+
+let mql = window.matchMedia('(prefers-color-scheme: dark)');
+
+if (mql.matches == true) {
+  document.documentElement.classList.add('night-mode');
+}
