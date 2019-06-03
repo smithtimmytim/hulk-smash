@@ -237,9 +237,6 @@ blockquote {
   }
   > ul {
     margin-left: 0;
-    @media #{$large-up} {
-      margin-left: 1.3rem;
-    }
   }
   > ol {
     margin-left: 0;
