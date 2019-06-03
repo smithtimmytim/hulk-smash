@@ -5,7 +5,10 @@
 }
 
 .comments__title,
-.comment-reply-title {
+.comment-reply-title,
+.likes h3,
+.reposts h3,
+.mentions h3 {
   font-size: $ratio-1;
   margin-top: 0;
   text-transform: uppercase;
@@ -16,6 +19,7 @@
 }
 
 .commentlist {
+  margin-bottom: $ratio2;
   .comment {
     position: relative;
     padding-left: 3.5rem;
@@ -92,7 +96,7 @@
 }
 
 .comment-respond {
-  margin-top: 1.8rem;
+  margin-top: $ratio2;
 }
 
 .comment-form {
@@ -178,22 +182,21 @@
 
 $circular-avatar-size: 1.7rem;
 
-.webmentions--likes,
-.webmentions--reposts {
-  .webmentions__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, $circular-avatar-size);
-    grid-gap: 0.4rem;
+.mention-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $circular-avatar-size);
+  grid-gap: 0.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: 0.6rem;
 
-    .webmentions__item {
-      padding: 0;
+  li {
+    margin-left: 0;
+
+    img {
+      position: static;
+      border-radius: 50%;
+      height: $circular-avatar-size;
+      width: $circular-avatar-size;
     }
-  }
-
-  .webmention__author__photo {
-    position: static;
-    border-radius: 50%;
-    height: $circular-avatar-size;
-    width: $circular-avatar-size;
   }
 }
