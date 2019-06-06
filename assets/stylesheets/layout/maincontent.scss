@@ -511,6 +511,54 @@
   }
 }
 
+// RELATED POSTS ---------------------------
+
+.post__related-posts {
+  border: 1px solid var(--border);
+  margin-top: $ratio2;
+
+  h3 {
+    align-items: center;
+    background-color: var(--light-bg);
+    font-size: $ratio-2;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding: 0.6rem 1rem;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding: 0.6rem 1rem;
+  }
+
+  li {
+    font-size: $ratio-1;
+    + li {
+      margin-top: 0.45rem;
+    }
+  }
+
+  a {
+    border-bottom: 1px dotted transparent;
+    display: inline-block;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: var(--link-bg);
+      border-bottom: 1px dotted var(--link);
+    }
+  }
+
+  .crp_date {
+    color: var(--light-text);
+    font-size: $ratio-2;
+    margin-left: 0.4rem;
+  }
+}
+
 // POST LIST -------------------------------
 
 .post-list {
