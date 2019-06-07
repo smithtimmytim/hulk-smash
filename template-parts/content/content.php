@@ -50,6 +50,11 @@
   <?php if (is_singular('post')) : ?>
     <footer class="post__footer">
 
+      <?php if (has_tag()) {
+        get_template_part('template-parts/series_aside');
+      }
+      ?>
+
       <?php if( get_field('letterboxd_url')) : ?>
         <p class="letterboxd__link"><?php get_template_part('template-parts/vectors/letterboxd_icon'); ?><em>Read this review on <a href="<?php the_field('letterboxd_url') ?>" title="Read my review of ‘<?php the_title(); ?>’ on Letterboxd">Letterboxd</a></em></p>
       <?php endif; ?>

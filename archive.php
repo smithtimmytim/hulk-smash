@@ -11,8 +11,7 @@
           ?>
           <small>
             <?php
-              $cat= get_the_category();
-              echo $cat[0]->count;
+              echo $wp_query->found_posts;
             ?>
           </small>
         </h1>
