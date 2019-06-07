@@ -18,21 +18,49 @@
   display: none;
 }
 
+.comment-author-smithtimmytim {
+  &:before {
+    background-color: var(--primary);
+    color: var(--heading);
+    content: '';
+    display: block;
+    font-size: $ratio-2;
+    font-weight: 600;
+    height: 1px;
+    text-transform: uppercase;
+    width: 15%;
+  }
+
+  .comment-body {
+    padding: $ratio 0;
+  }
+}
+
 .commentlist {
   margin-bottom: $ratio2;
   .comment {
     position: relative;
-    padding-left: 3.5rem;
     padding-top: $ratio1;
     padding-bottom: $ratio1;
+
+    .children {
+      border-left: 1px solid var(--border);
+      padding-left: $ratio;
+      margin-top: $ratio1;
+    }
+  }
+
+  .comment-author {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.4rem;
   }
 
   .photo {
     border-radius: 2px;
-    height: 2.2rem;
-    left: 0;
-    position: absolute;
-    width: 2.2rem;
+    height: 20px;
+    margin-right: 0.45rem;
+    width: 20px;
   }
 
   li + li {
@@ -48,7 +76,6 @@
     font-style: normal;
     font-weight: 600;
     display: inline-block;
-    margin-bottom: 0.4rem;
 
     a {
       color: var(--heading);

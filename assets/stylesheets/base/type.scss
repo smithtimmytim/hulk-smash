@@ -35,7 +35,7 @@ h5 {
 
 // TEXT --------------------------
 
-p {
+p:not(:last-of-type) {
   font-size: $ratio;
   line-height: 1.7;
   margin-bottom: $ratio;
