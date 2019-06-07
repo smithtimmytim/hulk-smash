@@ -34,6 +34,8 @@
       endwhile;
     endif;
     ?>
+
+    <?php wp_pagenavi(); ?>
   </div>
 </main>
 

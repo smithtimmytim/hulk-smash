@@ -1,3 +1,44 @@
 // -------------------------------
 // PAGE NAV
 // -------------------------------
+
+.wp-pagenavi {
+  margin-top: 5rem;
+  display: flex;
+  font-size: $ratio-1;
+  justify-content: center;
+
+  * + * {
+    margin-left: $ratio;
+  }
+
+  .page,
+  .current,
+  .extend,
+  .previouspostslink,
+  .nextpostslink,
+  .first,
+  .last {
+    border-radius: $global-radius;
+    padding: 0.3rem 0.7rem;
+    text-decoration: none;
+  }
+
+  .page:hover,
+  .page:focus {
+    background-color: var(--light-bg);
+  }
+
+  .current {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+  }
+
+  .previouspostslink,
+  .nextpostslink,
+  .first,
+  .last {
+    box-shadow: 0 0 0 2px var(--border);
+  }
+}
