@@ -35,10 +35,13 @@ h5 {
 
 // TEXT --------------------------
 
-p:not(:last-of-type) {
+p {
   font-size: $ratio;
   line-height: 1.7;
-  margin-bottom: $ratio;
+
+  &:not(:last-of-type) {
+    margin-bottom: $ratio;
+  }
 }
 
 h1 {
