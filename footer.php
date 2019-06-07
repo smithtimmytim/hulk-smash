@@ -11,7 +11,7 @@
 
   <div class="footer__topics">
     <h2>Browse by Section</h2>
-    <ul>
+    <ul class="footer-list">
       <?php wp_list_categories( array(
         'order'      => 'DESC',
         'orderby'    => 'count',
@@ -33,7 +33,7 @@
 
   <div class="footer__blogroll">
     <h2>Blogroll</h2>
-    <ul>
+    <ul class="footer-list">
       <li><a href="https://robothive.net/"><em>Robot Hive</em></a> by Mike Haynes</li>
       <li><a href="https://thenewsprint.co/"><em>The Newsprint</em></a> by Joshua Ginter</li>
       <li><a href="https://laurakalbag.com/">Laura Kalbag</a></li>
@@ -51,6 +51,25 @@
     </ul>
 
   </div>
+
+  <div class="footer__series">
+    <h2>Browse by Series</h2>
+
+    <ul class="footer-list">
+      <?php
+        $tags = get_tags();
+        foreach ( $tags as $tag ) :
+        $tag_link = get_tag_link( $tag->term_id );
+      ?>
+      <li>
+        <a href='<?php echo $tag_link; ?>' title='<?php echo $tag->name; ?>'><?php echo $tag->name ?></a>
+      </li>
+      <?php
+        endforeach;
+      ?>
+    </ul>
+  </div>
+ 
 
   <?php get_search_form(); ?>
 

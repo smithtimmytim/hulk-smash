@@ -15,6 +15,7 @@
     'furthermore'
     'search'
     'topics'
+    'series'
     'blogroll'
     'subfooter';
 
@@ -24,7 +25,8 @@
       'about about about about about about'
       'furthermore furthermore furthermore furthermore furthermore furthermore'
       'search search search search search search'
-      'blogroll blogroll blogroll blogroll topics topics'
+      'topics topics series series series series'
+      'topics topics blogroll blogroll blogroll blogroll'
       'subfooter subfooter subfooter subfooter subfooter subfooter';
   }
 
@@ -34,7 +36,8 @@
     grid-template-areas:
       'about about about furthermore furthermore furthermore'
       'about about about search search search'
-      'blogroll blogroll blogroll topics topics topics'
+      'topics topics topics series series series'
+      'topics topics topics blogroll blogroll blogroll'
       'subfooter subfooter subfooter subfooter subfooter subfooter';
   }
 
@@ -77,7 +80,8 @@
 }
 
 .footer__topics h2,
-.footer__blogroll h2 {
+.footer__blogroll h2,
+.footer__series h2 {
   color: var(--footer-light-text);
   border-bottom: 2px solid var(--footer-light-text);
   padding-bottom: 0.4rem;
@@ -88,16 +92,6 @@
 
 .footer__topics {
   grid-area: topics;
-
-  ul {
-    column-count: 2;
-    li {
-      font-size: $ratio-1;
-      + li {
-        margin-top: 0.4rem;
-      }
-    }
-  }
 }
 
 .footer__about {
@@ -106,27 +100,22 @@
   h2 {
     color: var(--footer-light-text);
   }
-
-  // ul {
-  //   li {
-  //     font-size: $ratio-1;
-  //     + li {
-  //       margin-top: 0.4rem;
-  //     }
-  //   }
-  // }
 }
 
 .footer__blogroll {
   grid-area: blogroll;
+}
 
-  ul {
-    column-count: 2;
-    li {
-      font-size: $ratio-1;
-      + li {
-        margin-top: 0.4rem;
-      }
+.footer__series {
+  grid-area: series;
+}
+
+.footer-list {
+  column-count: 2;
+  li {
+    font-size: $ratio-1;
+    + li {
+      margin-top: 0.4rem;
     }
   }
 }
