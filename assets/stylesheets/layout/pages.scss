@@ -60,7 +60,7 @@
 
   @media #{$medium-up} {
     grid-column-gap: 1.4rem;
-    grid-template-columns: 200px minmax(auto, 35rem);
+    grid-template-columns: 160px minmax(auto, 35rem);
   }
 }
 
@@ -71,20 +71,21 @@
     max-width: 90%;
   }
 
-  .author__picture {
-    grid-row: span 3;
+  .avatar.photo {
+    border-radius: 5px;
   }
 
   .author__name {
-    font-size: $ratio2;
-    font-weight: 600;
     color: var(--heading);
+    font-size: $ratio2;
+    line-height: 1;
     margin: 0;
   }
 
   .author__title {
     color: var(--light-text);
     font-size: $ratio1;
+    line-height: 1.2;
     margin-bottom: 0;
     margin-top: 0;
     text-transform: none;
@@ -92,22 +93,9 @@
     &:before {
       content: none;
     }
-
-    @media #{$medium-up} {
-      margin-bottom: 0.6rem;
-    }
   }
 
-  .author__bio {
-    line-height: 1.6;
-
-    @media #{$small-only} {
-      display: none;
-    }
-  }
-
-  .author-profiles {
-    grid-column: 2;
+  .author__profiles {
     margin-top: 1.8rem;
   }
 }
