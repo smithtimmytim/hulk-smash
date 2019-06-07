@@ -36,6 +36,35 @@
 
       </header>
 
+      <ul class="groups-list groups-list--3-col">
+        <?php
+        
+        $query = new WP_Query( array( 
+          'author'   => $curauth->ID, 
+          'nopaging' => 1 
+        ));
+        $prev_year = null;
+        if ( $query->have_posts() ) {
+          while ( $query->have_posts() ) {
+              $query->the_post();
+              $this_year = get_the_date('Y');
+              if ($prev_year != $this_year) {
+                  // Year boundary
+                  if (!is_null($prev_year)) {
+                    // A list is already open, close it first
+                    echo '</li>';
+                  }
+                  echo '<li><a href="#'. $this_year .'">'. $this_year .'</a>';
+              }
+              
+              $prev_year = $this_year;
+          }
+          echo '</li>';
+        }
+      ?>
+      </ul>
+      
+
       <?php
         
         $query = new WP_Query( array( 
@@ -51,9 +80,9 @@
                   // Year boundary
                   if (!is_null($prev_year)) {
                     // A list is already open, close it first
-                    echo '</ul></section>';
+                    echo '</ul><a href="#page-title" class="group__return-home">Back to Top &uarr;</a></section>';
                   }
-                  echo '<section class="group-section"><h2 class="group__name">' . $this_year . '</h2><ul class="group__post-list group__post-list--2-col">';
+                  echo '<section class="group-section" id="' . $this_year . '"><h2 class="group__name">' . $this_year . '</h2><ul class="group__post-list group__post-list--2-col">';
               }
               echo '<li class="group-post__item group-post__item--bold"><a href="'. get_permalink() .'">' . get_the_title();
               if (get_field('rating')) {
@@ -63,7 +92,7 @@
               echo '</a><span class="group-post__meta-info">' . get_the_date('M d') . '</li>';
               $prev_year = $this_year;
           }
-          echo '</ul></section>';
+          echo '</ul><a href="#page-title" class="group__return-home">Back to Top &uarr;</a></section>';
         }
       ?>
 
