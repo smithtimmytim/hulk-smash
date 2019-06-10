@@ -28,6 +28,17 @@
       <span class="post__date">
         <a href="<?php the_permalink(); ?>" class="u-url"><time class="dt-published"><?php echo get_the_date('M d, Y'); ?></time></a>
       </span>
+      <?php if (comments_open()) : ?>
+      <span class="post__comments-link">
+        <a href="<?php the_permalink(); ?>#post-discussion">
+          Discuss
+          <?php if (get_comments_number() > 0 ) {
+            echo '(' . get_comments_number() . ')';
+          }
+        ?>
+        </a>
+      </span>
+      <?php endif; ?>
     </div>
 
     <?php if (get_field('rating')) : ?>
@@ -66,7 +77,7 @@
       </section>
       
       <?php if (comments_open() || get_comments_number() > 0) : ?>
-        <section class="post__comments">
+        <section id="post-discussion" class="post__comments">
           <h2 class="comments__title">Discussion</h2>
 
           <button id="show-comments" class="btn btn--xsmall btn--primary btn--outline btn--icon">
