@@ -4,6 +4,17 @@
   margin-top: $ratio2;
 }
 
+.post-comments__comments {
+  display: none;
+  &.js-is-open {
+    display: block;
+  }
+}
+
+#show-comments {
+  margin-top: 1rem;
+}
+
 .comments__title,
 .comment-reply-title,
 .likes h3,

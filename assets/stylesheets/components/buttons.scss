@@ -17,10 +17,20 @@
   &:focus {
     text-decoration: none;
   }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.6rem;
+  }
 }
 
 .btn--small {
   font-size: $ratio-1;
+}
+
+.btn--xsmall {
+  font-size: $ratio-2;
 }
 
 .btn--primary {
@@ -30,6 +40,29 @@
   &:focus {
     background-color: var(--primary-active);
   }
+
+  &.btn--outline {
+    background-color: transparent;
+    box-shadow: 0 0 0 3px var(--primary);
+    color: var(--primary);
+    text-transform: uppercase;
+
+    svg {
+      fill: var(--primary);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--primary-bg);
+      color: var(--primary);
+    }
+  }
+}
+
+.btn--icon {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .btn--secondary {
