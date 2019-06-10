@@ -28,6 +28,17 @@
       <span class="post__date">
         <a href="<?php the_permalink(); ?>" class="u-url"><time class="dt-published"><?php echo get_the_date('M d, Y'); ?></time></a>
       </span>
+      <?php if (comments_open()) : ?>
+      <span class="post__comments-link">
+        <a href="<?php the_permalink(); ?>#post-discussion">
+          Discuss
+          <?php if (get_comments_number() > 0 ) {
+            echo '(' . get_comments_number() . ')';
+          }
+        ?>
+        </a>
+      </span>
+      <?php endif; ?>
     </div>
 
     <?php if (get_field('rating')) : ?>
@@ -65,10 +76,29 @@
         <?php if ( function_exists( 'echo_crp' ) ) { echo_crp(); } ?>
       </section>
       
-      <section class="post__comments">
-        <h2 class="comments__title">Comments</h2>
-        <?php comments_template(); ?>
-      </section>
+      <?php if (comments_open() || get_comments_number() > 0) : ?>
+        <section id="post-discussion" class="post__comments">
+          <h2 class="comments__title">Discussion</h2>
+
+          <button id="show-comments" class="btn btn--xsmall btn--primary btn--outline btn--icon">
+            <?php
+              if (get_comments_number() > 0 ) {
+                get_template_part('template-parts/vectors/comment_icon');
+                echo 'Show Discussion ';
+                echo '(' . get_comments_number() . ')';
+              } else {
+                get_template_part('template-parts/vectors/comment_icon');
+                echo 'Start the Conversation';
+              }
+            ?>
+          </button>
+          
+          <div class="post-comments__comments">
+           <?php comments_template(); ?>
+          </div>
+          
+        </section>
+      <?php endif; ?>
     </footer>
   <?php endif; ?>
 

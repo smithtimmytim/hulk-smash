@@ -4,15 +4,14 @@
 // a button is clicked.
 // -----------------------------------------
 
-var groupList = document.querySelector('.groups-list--space-saver');
-var groupButton = document.getElementById('groups-list-toggle');
+var commentList = document.querySelector('.post-comments__comments');
+var commentButton = document.getElementById('show-comments');
 
-function groupListReveal() {
-  groupList.classList.add('js-is-open');
-  groupButton.remove();
+function commentReveal() {
+  commentList.classList.add('js-is-open');
+  commentButton.remove();
 }
 
-if ( groupButton ) {
-  groupButton.addEventListener("click", groupListReveal);
+if (commentButton) {
+  commentButton.addEventListener('click', commentReveal);
 }
-

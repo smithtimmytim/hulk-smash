@@ -4,11 +4,19 @@
   margin-top: $ratio2;
 }
 
+.post-comments__comments {
+  display: none;
+  &.js-is-open {
+    display: block;
+  }
+}
+
+#show-comments {
+  margin-top: 1rem;
+}
+
 .comments__title,
-.comment-reply-title,
-.likes h3,
-.reposts h3,
-.mentions h3 {
+.comment-reply-title {
   font-size: $ratio-1;
   margin-top: 0;
   text-transform: uppercase;
@@ -38,7 +46,8 @@
 
 .commentlist {
   margin-bottom: $ratio2;
-  .comment {
+  .comment,
+  .webmention {
     position: relative;
     padding-top: $ratio1;
     padding-bottom: $ratio1;
@@ -207,21 +216,38 @@
   }
 }
 
-$circular-avatar-size: 1.7rem;
+.likes,
+.reposts {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  grid-gap: 1rem;
+
+  h3 {
+    color: var(--light-text);
+    font-size: $ratio-2;
+    margin-top: 0.35rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+.reposts {
+  margin-top: 0.6rem;
+}
+
+$circular-avatar-size: 1.5rem;
 
 .mention-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, $circular-avatar-size);
-  grid-gap: 0.4rem;
-  margin-bottom: 1.8rem;
-  margin-top: 0.6rem;
+  grid-gap: 0.25rem;
 
   li {
     margin-left: 0;
 
     img {
       position: static;
-      border-radius: 50%;
+      border-radius: 2px;
       height: $circular-avatar-size;
       width: $circular-avatar-size;
     }
