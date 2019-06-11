@@ -134,6 +134,44 @@
   }
 }
 
+.post__share {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post__share-button {
+  display: none;
+  &.js-navigator-share {
+    display: flex;
+  }
+
+  -webkit-appearance: none;
+  align-items: center;
+  background-color: transparent;
+  border: 3px solid var(--border);
+  border-radius: 25px;
+  color: var(--text);
+  font-size: $ratio-1;
+  font-weight: 600;
+  padding: 0.45rem 0.65rem;
+  transition: color 300ms ease-in-out;
+
+  svg {
+    fill: var(--primary);
+    height: 1em;
+    margin-right: 0.4rem;
+    width: 1em;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--link);
+  }
+  &:focus {
+    box-shadow: 0 0 6px var(--link-underline);
+  }
+}
+
 // Post Author -------------------
 
 .post__meta {
