@@ -7,9 +7,9 @@
 add_theme_support( 'post-thumbnails' ); 
 
 function _themename_assets() {
-  wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . '/dist/css/hulk-smash.css', array(), '2019.7', 'all' );
+  wp_enqueue_style( '_themename-stylesheet', get_template_directory_uri() . '/dist/css/hulk-smash.css', array(), '2019.8', 'all' );
 
-  wp_enqueue_script( '_themename-scripts', get_template_directory_uri() . '/dist/js/hulk-smash.js', array(), '2019.7', true );
+  wp_enqueue_script( '_themename-scripts', get_template_directory_uri() . '/dist/js/hulk-smash.js', array(), '2019.8', true );
 }
 add_action('wp_enqueue_scripts', '_themename_assets');
 
