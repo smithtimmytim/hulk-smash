@@ -5,7 +5,7 @@
 }
 
 .post-comments__comments {
-  // display: none;
+  display: none;
   &.js-is-open {
     display: block;
   }
