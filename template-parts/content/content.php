@@ -70,6 +70,13 @@
         <p class="letterboxd__link"><?php get_template_part('template-parts/vectors/letterboxd_icon'); ?><em>Read this review on <a href="<?php the_field('letterboxd_url') ?>" title="Read my review of ‘<?php the_title(); ?>’ on Letterboxd">Letterboxd</a></em></p>
       <?php endif; ?>
 
+      <div class="post__share">
+        <button id="share-button" class="post__share-button">
+          <?php get_template_part('template-parts/vectors/share_icon'); ?>
+          Share
+        </button>
+      </div>
+      
       <?php get_template_part('template-parts/newsletter_form'); ?>
 
       <section class="post__related-posts">
