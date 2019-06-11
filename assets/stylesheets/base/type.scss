@@ -108,6 +108,7 @@ h5 {
 
 .p-body > ul:not(.slash-list):not(.author-archive):not(.search__results),
 .e-content > ul,
+.comment-body > ul,
 blockquote > ul {
   margin-bottom: 1.1rem;
   margin-left: 2rem;
@@ -146,6 +147,7 @@ blockquote > ul {
 
 .p-body > ol,
 .e-content > ol,
+.comment-body > ol,
 blockquote > ol {
   margin-bottom: 1.1rem;
   margin-left: 2rem;

@@ -5,7 +5,7 @@
 }
 
 .post-comments__comments {
-  display: none;
+  // display: none;
   &.js-is-open {
     display: block;
   }
@@ -56,6 +56,9 @@
       border-left: 1px solid var(--border);
       padding-left: $ratio;
       margin-top: $ratio1;
+      > li + li {
+        border-top: 1px solid var(--border);
+      }
     }
   }
 
@@ -72,8 +75,12 @@
     width: 20px;
   }
 
-  li + li {
+  > li + li {
     border-top: 1px solid var(--border);
+  }
+
+  .reply {
+    margin-top: $ratio;
   }
 }
 
@@ -103,8 +110,21 @@
 
 .comment-author .fn,
 .comment-body p,
+.comment-body > ul li,
+.comment-body > ol li,
 .logged-in-as {
   font-size: $ratio-1;
+}
+
+.comment-body > ul,
+.comment-body > ol {
+  margin-bottom: $ratio-1;
+  margin-left: 0;
+  margin-top: $ratio-1;
+
+  li + li {
+    margin-top: 0.25rem;
+  }
 }
 
 .comment-awaiting-moderation {
