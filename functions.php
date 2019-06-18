@@ -49,4 +49,13 @@ function urlToDomain($url) {
    return implode(array_slice(explode('/', preg_replace('/https?:\/\/(www\.)?/', '', $url)), 0, 1));
 }
 
+add_action('init', 'newsletterRSS');
+function newsletterRSS() {
+  add_feed('newsletter', 'newsletterRSSFunc');
+}
+
+function newsletterRSSFunc() {
+  get_template_part('rss', 'newsletter');
+}
+
 ?>
