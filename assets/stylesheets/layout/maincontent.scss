@@ -24,7 +24,9 @@
 .post__date a {
   color: var(--light-text);
   font-weight: normal;
-  text-decoration: none;
+  // text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--light-text);
 }
 
 .post__comments-link {
