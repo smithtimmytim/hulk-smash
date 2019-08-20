@@ -117,17 +117,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 18rem;
+
+  .post__footer & {
+    margin-top: 3rem;
+  }
+
   .posts & {
     margin-bottom: 5rem;
     margin-top: 5rem;
-  }
-
-  .page-post & {
-    margin-top: 5rem;
-  }
-
-  .page-category & {
-    margin-top: 5rem;
+    min-height: 154.11px;
   }
 }
 

@@ -106,6 +106,8 @@
           
         </section>
       <?php endif; ?>
+      
+      <?php get_template_part('template-parts/carbon_ad'); ?>
     </footer>
   <?php endif; ?>
 

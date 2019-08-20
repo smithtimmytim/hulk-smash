@@ -5,11 +5,21 @@
   <section class="posts">
     <?php
       if ( have_posts() ) {
+        $post = $posts[0];
+        $c = 0;
         while ( have_posts() ) {
     
           the_post(); ?>
+          
 
           <?php get_template_part('template-parts/content/content'); ?>
+
+          <?php
+          $c++;
+          
+          if ($c == 1) {
+            get_template_part('template-parts/carbon_ad');
+          } ?>
     
         <?php }
     }
