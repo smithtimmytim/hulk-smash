@@ -15,7 +15,7 @@
     "@babel/register": "^7.4.4",
     "babel-loader": "^8.0.6",
     "babel-plugin-prismjs": "^1.0.2",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
