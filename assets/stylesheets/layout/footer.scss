@@ -3,6 +3,7 @@
 // -------------------------------
 
 .footer {
+  border-top: 2px solid var(--alt);
   background-color: var(--secondary);
   color: var(--footer-light-text);
   padding: 2rem;
@@ -51,7 +52,7 @@
   }
 
   a {
-    color: white;
+    color: var(--text);
     font-weight: normal;
     text-decoration: none;
     &:hover,

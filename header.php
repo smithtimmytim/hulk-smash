@@ -92,11 +92,6 @@
           <button id="topics-toggle" class="topics-menu__label">Sections</button>       
         </li>
         <li><a class="header__subscribe" href="/subscribe/">Subscribe</a></li>
-        <li>
-          <button id="dark-mode-toggle" class="header__mode-toggle">
-           <?php get_template_part('template-parts/vectors/sun_icon'); ?>
-          </button>
-        </li>
       </ul>
     </nav>
   </div>

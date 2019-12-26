@@ -3,14 +3,10 @@
 // -------------------------------
 
 .main {
-  background-color: var(--main-bg);
-  padding: 2.5rem 0 4rem;
+  // background-color: var(--main-bg);
+  padding: 2rem 0 4rem;
   position: relative;
   z-index: 2;
-
-  @media #{$medium-up} {
-    padding: 4rem 0 6rem;
-  }
 }
 
 // Shareable Post Styles ---------
@@ -24,7 +20,6 @@
 .post__date a {
   color: var(--light-text);
   font-weight: normal;
-  // text-decoration: none;
   text-decoration: underline;
   text-decoration-color: var(--light-text);
 }
@@ -519,6 +514,7 @@
   }
 
   p {
+    color: var(--light-text);
     font-size: $ratio-2;
     line-height: 1.4;
   }

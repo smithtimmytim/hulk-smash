@@ -28,16 +28,17 @@
   }
 
   input {
-    border-radius: $global-radius;
-    color: var(--text);
+    background: transparent;
+    border-bottom: 2px solid var(--light-text);
+    color: white;
     font-size: $ratio-1;
     max-height: 45px;
-    padding: 0.65rem;
+    padding: 0.65rem 0;
     transition: 0.2s ease-in-out;
     width: 100%;
 
     &:focus {
-      background: lighten(#feffda, 3%);
+      border-color: var(--primary);
     }
   }
 
@@ -71,8 +72,11 @@
     padding: 0.8rem 0;
     background-color: transparent;
     width: 100%;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--light-text);
     -webkit-appearance: none;
+    &:focus {
+      border-color: var(--primary);
+    }
   }
 
   .search__icon {

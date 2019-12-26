@@ -14,7 +14,7 @@ pre {
 code {
   background: var(--code-bg);
   border-radius: 3px;
-  color: #bf616a;
+  color: #ef6b73;
   font-family: Operator Mono, monospace;
   font-size: $ratio - 0.05;
   line-height: 1.5;
@@ -42,17 +42,17 @@ pre[class*='language-'] {
  */
 
 // Color Vars
-$ocean: #1b2b34;
-$ocean-alt: #293841;
-$ocean-alt2: #3c4a51;
-$grey: #65737e;
-$red: #f06557;
-$orange: #f98146;
-$yellow: #fac854;
-$green: #99c794;
-$aqua: #54b3b3;
+$ocean: #171c28;
+$ocean-alt: #1d2433;
+$ocean-alt2: #2f3b54;
+$grey: #6679a4;
+$red: #ef6b73;
+$orange: #ffae57;
+$yellow: #ffd580;
+$green: #bae67e;
+$aqua: #5ccfe6;
 $blue: #4387cc;
-$purple: #c594c5;
+$purple: #c3a6ff;
 
 // Code Blocks
 code[class*='language-'],
@@ -71,7 +71,7 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: $ocean;
+  background: var(--light-bg);
 }
 code[class*='language-'] {
   color: #ccc;

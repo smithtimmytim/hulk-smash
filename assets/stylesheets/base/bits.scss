@@ -3,24 +3,29 @@
 // -----------------------------------------
 
 :root {
-  --primary: #ff008f;
-  --primary-active: #e60081;
-  --primary-border: #ffdbef;
-  --primary-bg: #fff0f8;
-  --secondary: #161f2d;
-  --alt: #ffe000;
-  --text: #31445d;
-  --heading: var(--secondary);
-  --light-text: #70829f;
-  --highlight: #fffedb;
-  --link: #0993cb;
-  --link-bg: #0993cb1a;
-  --link-underline: #a1e4ff;
-  --border: #dae1ed;
-  --light-bg: #ebeff5;
-  --code-bg: #f6f3f2;
-  --footer-light-text: #8f9db3;
-  --main-bg: #fff;
+  --primary: #ef6b73;
+  --primary-active: #db515a;
+  --primary-border: var(--border);
+  --primary-bg: #1d2433;
+  --secondary: #171c28;
+  --alt: #ffcc66;
+  --text: #a2aabc;
+  --heading: #d7dce2;
+  --light-text: #6679a4;
+  --highlight: #2f3b54;
+  --link: #5ccfe6;
+  --link-bg: #5ccfe61a;
+  --link-underline: var(--link);
+  --border: #2f3b54;
+  --light-bg: var(--secondary);
+  --code-bg: var(--secondary);
+  --footer-light-text: var(--light-text);
+  --main-bg: #1d2433;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: white;
 }
 
 // -------------------------------
@@ -28,62 +33,11 @@
 // -------------------------------
 
 .night-mode {
-  --primary: #f075ba;
-  --primary-bg: #f075ba4d;
-  --primary-border: var(--border);
-  --secondary: #1c1d21;
-  --alt: #dbbb76;
-  --text: #bbb;
-  --heading: #ccc;
-  --light-bg: #23252a;
-  --light-text: #757982;
-  --main-bg: #2a2c32;
-  --link: #7bb2bf;
-  --link-underline: var(--link);
-  --highlight: #bbbbbb26;
-  --footer-light-text: var(--light-text);
-  --border: #51545a;
-  --code-bg: var(--secondary);
-
-  .header:before {
-    content: none;
-  }
-
-  .btn--primary:hover,
-  .btn--primary:focus {
-    color: white;
-  }
-
-  .footer a {
-    color: var(--text);
-  }
-
-  .post__series,
-  .header__topics {
-    background-color: var(--secondary);
-  }
-
-  .star--empty {
-    fill: var(--light-text);
-  }
-
-  code[class*='language-'],
-  pre[class*='language-'] {
-    background: var(--light-bg);
-  }
-
-  .post__series p {
-    color: var(--light-text);
-  }
-
-  ::selection {
-    background-color: var(--primary);
-    color: white;
-  }
 }
 
 // GLOBAL RADIUS
 $global-radius: 2px;
+$button-radius: 50px;
 
 // -----------------------------------------
 // MEDIA QUERIES
