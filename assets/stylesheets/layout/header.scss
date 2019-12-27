@@ -70,21 +70,6 @@
   }
 }
 
-// Header Mode Toggle
-
-.header__mode-toggle {
-  background: none;
-  border: 0;
-  display: grid;
-  padding: 0;
-
-  .svg-icon {
-    width: 1.3rem;
-    height: 1.3rem;
-    fill: var(--alt);
-  }
-}
-
 // Header Topics
 
 .header-topics__close {

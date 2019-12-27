@@ -1,4 +1,3 @@
-import './dark-mode';
 import './topics-menu';
 import './group-list';
 import './share-button';

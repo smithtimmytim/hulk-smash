@@ -50,17 +50,6 @@
     />
   </noscript>
 
-  <!-- Night Mode Stuff -->
-  <script>
-    ;(function (window, document, undefined) {
-      'use strict';
-      if (!('localStorage' in window)) return;
-      var nightMode = localStorage.getItem('nightMode');
-      if (!nightMode) return;
-      document.documentElement.className += ' night-mode';
-    })(window, document);
-  </script>
-
   <?php wp_head(); ?>
 </head>
 
