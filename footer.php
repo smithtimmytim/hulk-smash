@@ -22,7 +22,6 @@
   </div>
 
   <div class="footer__about">
-    <h2 class="slash-list__title">Site Links</h2>
     <ul class="slash-list">
       <li><a href="/about">About</a></li>
       <li><a href="/archive">Archive</a></li>
