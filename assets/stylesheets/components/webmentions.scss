@@ -23,7 +23,7 @@
     display: block;
     font-size: $ratio-2;
     font-weight: 600;
-    height: 1px;
+    height: 3px;
     text-transform: uppercase;
     width: 15%;
   }
@@ -44,7 +44,8 @@
     .children {
       border-left: 1px solid var(--border);
       padding-left: $ratio;
-      margin-top: $ratio1;
+      margin-block-start: $ratio1;
+      margin-inline-start: $ratio1;
       > li + li {
         border-top: 1px solid var(--border);
       }
@@ -183,6 +184,11 @@
   label {
     margin-left: 0.4rem;
   }
+}
+
+#cancel-comment-reply-link {
+  text-transform: capitalize;
+  margin-inline-start: $ratio-1;
 }
 
 #webmention-form,
