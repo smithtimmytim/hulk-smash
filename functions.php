@@ -58,4 +58,15 @@ function newsletterRSSFunc() {
   get_template_part('rss', 'newsletter');
 }
 
+// Comment Replies
+function wpse218049_enqueue_comments_reply() {
+
+  if( is_singular() && comments_open() && ( get_option( 'thread_comments' ) == 1) ) {
+    // Load comment-reply.js (into footer)
+    wp_enqueue_script( 'comment-reply', '/wp-includes/js/comment-reply.min.js', array(), false, true );
+  }
+  
+}
+add_action(  'wp_enqueue_scripts', 'wpse218049_enqueue_comments_reply' );
+
 ?>
