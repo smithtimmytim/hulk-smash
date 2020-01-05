@@ -12,7 +12,19 @@
           the_post(); ?>
           
 
-          <?php get_template_part('template-parts/content/content'); ?>
+          <?php 
+
+            if ( has_post_format( 'status' )) {
+              
+              get_template_part('template-parts/content/status');
+
+            } else {
+
+              get_template_part('template-parts/content/content');
+
+            }
+
+          ?>
 
           <?php
           $c++;

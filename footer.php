@@ -15,6 +15,7 @@
       <?php wp_list_categories( array(
         'order'      => 'DESC',
         'orderby'    => 'count',
+        'exclude'    => array( 24 ),
         'title_li'   => ''
       )); ?>
     </ul>

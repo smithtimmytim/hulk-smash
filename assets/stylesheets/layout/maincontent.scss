@@ -19,8 +19,7 @@
 .post__date a {
   color: var(--light-text);
   font-weight: normal;
-  text-decoration: underline;
-  text-decoration-color: var(--light-text);
+  text-decoration: none;
 }
 
 .post__comments-link {
@@ -183,6 +182,7 @@
   margin-right: 0.6rem;
   a {
     transition: background-color 300ms ease-in-out;
+    text-decoration: none;
     &:hover,
     &:focus {
       background-color: var(--link-bg);
@@ -447,6 +447,15 @@
     font-size: $ratio-2;
     margin-top: 0.2rem;
     text-align: right;
+  }
+}
+
+// Format Status -----------------
+
+.post.format-status {
+  .post__header {
+    border-block-end: 1px solid var(--border);
+    padding-block-end: $ratio2;
   }
 }
 

@@ -40,8 +40,9 @@
         <?php
         
         $query = new WP_Query( array( 
-          'author'   => $curauth->ID, 
-          'nopaging' => 1 
+          'author'   => $curauth->ID,
+          'category__not_in' => array( 24 ),
+          'nopaging' => 1
         ));
         $prev_year = null;
         if ( $query->have_posts() ) {
@@ -69,6 +70,7 @@
         
         $query = new WP_Query( array( 
           'author'   => $curauth->ID, 
+          'category__not_in' => array( 24 ),
           'nopaging' => 1 
         ));
         $prev_year = null;
