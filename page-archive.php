@@ -15,7 +15,10 @@ get_header(); ?>
 
   <ul class="groups-list groups-list--3-col">
     <?php
-      query_posts(array('nopaging' => 1, /* we want all posts, so disable paging. Order by date is default */));
+      query_posts(array(
+        'nopaging'         => 1, 
+        'category__not_in' => array( 24 )
+      ));
       $prev_year = null;
       if ( have_posts() ) {
         while ( have_posts() ) {
@@ -39,7 +42,10 @@ get_header(); ?>
   </ul>
 
   <?php
-    query_posts(array('nopaging' => 1, /* we want all posts, so disable paging. Order by date is default */));
+    query_posts(array(
+      'nopaging' => 1,
+      'category__not_in' => array( 24 )
+    ));
     $prev_year = null;
     if ( have_posts() ) {
       while ( have_posts() ) {

@@ -64,6 +64,7 @@
       'order'      => 'DESC',
       'orderby'    => 'count',
       'show_count' => true,
+      'exclude'    => array( 24 ),
       'title_li'   => ''
     )); ?>
   </ul>
