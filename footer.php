@@ -32,9 +32,10 @@
   </div>
 
   <div class="footer__blogroll">
-    <h2>Blogroll</h2>
+    <h2 id="footer-blogroll">Blogroll</h2>
     <ul class="footer-list">
-      <li><a href="https://robothive.net/"><em>Robot Hive</em></a> by Mike Haynes</li>
+      <li><a href="https://mikehayn.es/">Mike Haynes</a></li>
+      <li><a href="https://birchtree.me/"><em>BirchTree</em></a> by Matt Birchler</li>
       <li><a href="https://thenewsprint.co/"><em>The Newsprint</em></a> by Joshua Ginter</li>
       <li><a href="https://laurakalbag.com/">Laura Kalbag</a></li>
       <li><a href="https://bitsofco.de/"><em>bitsofcode</em></a> by Ire Aderinokun</li>
@@ -44,7 +45,6 @@
       <li><a href="https://katydecorah.com/">Katy DeCorah</a></li>
       <li><a href="https://pxlnv.com/"><em>Pixel Envy</em></a> by Nick Heer</li>
       <li><a href="https://www.manton.org/">Manton Reece</a></li>
-      <li><a href="https://waxy.org/"><em>Waxy</em></a> by Andy Baio</li>
       <li><a href="https://daverupert.com/">Dave Rupert</a></li>
       <li><a href="https://robinrendle.com/">Robin Rendle</a></li>
       <li><a href="https://audaciousfox.net/"><em>Audacious Fox</em></a> by Kyle Dreger</li>
